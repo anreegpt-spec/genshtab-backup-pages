@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Как локальный инструмент резервного копирования использует данные Google Drive.">
+  <title>Политика конфиденциальности — Генштаб — резерв</title>
+  <style>
+    :root { color-scheme: light dark; font: 16px/1.6 system-ui, sans-serif; }
+    body { max-width: 760px; margin: 10vh auto; padding: 0 1.25rem; }
+    h1 { line-height: 1.2; }
+    a { color: #1769aa; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Политика конфиденциальности</h1>
+    <p>Приложение запрашивает разрешения Google Drive <code>drive.file</code> и <code>drive.metadata.readonly</code>. Оно использует метаданные, чтобы проверить владельца, доступ и свободное место целевой папки.</p>
+    <p>Инструмент читает только выбранные локальные файлы из рабочей базы. Он создаёт из них ZIP-архив без шифрования и передаёт архив в личную папку Google Drive владельца. Инструмент не открывает доступ к папке другим людям и не меняет её настройки доступа.</p>
+    <p>Локальная конфигурация OAuth хранится на компьютере владельца и не входит в резервный архив. Google Drive получает архив как выбранное место хранения. Приложение не продаёт данные и не использует их для рекламы, профилирования или обучения моделей.</p>
+    <p>Владелец может удалить архивы и отозвать разрешение приложения в настройках Google Account.</p>
+    <p><a href="index.html">Главная</a></p>
+  </main>
+</body>
+</html>
